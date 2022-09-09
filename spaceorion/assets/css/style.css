@@ -1,0 +1,798 @@
+:root{
+	--primary-color: #640e0e;
+	--primary-dark: #640e0e;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+img{
+	width: 100%;
+}
+ul{
+	padding: 0;
+}
+#wrapper{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	max-width: 1160px;
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#intro{
+	position: relative;
+	/*height: 100vh;*/
+	aspect-ratio: 1.7;
+}
+video{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: -1;
+	padding: 0;
+	margin: 0;
+}
+#header{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	box-sizing: border-box;
+	height: 100%;
+}
+#site_logo{
+	width: 60px;
+	margin: 20px 0	;
+	aspect-ratio: 1;
+}
+#header_site_info{
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+#header_site_info h3{
+	font-size: 25px;
+	margin: 10px 0;
+}
+#header_site_info h1{
+	font-size: 60px;
+	margin: 0;
+}
+#header_site_info BUTTON{
+	margin: 15px 10px;
+	background: #640e0e;
+	padding: 13px 17px;
+	color: #fff;
+	font-size: 14px;
+	border: 0;
+	outline: none;
+	border-radius: 8px;
+}
+#header_social_site{
+	list-style: none;
+	margin: 13px 20px;
+	text-align: right;
+	width: calc(100% - 60px);
+}
+#header_social_site li{
+	display: inline-block;
+	width: 25px;
+	margin-right: 10px
+}
+#rocket{
+	position: absolute;
+	bottom: 30%;
+	right: 10%;
+	transform: rotate(30deg);
+	width: 120px;
+	z-index: -1;
+}
+#main_section{
+	background: #000;
+}
+#recent > h2{
+	text-align: center;
+	background: #fff;
+	color: #262626;
+	margin: 0;
+	margin: 0 auto 50px;
+	padding: 10px;
+	max-width: 1280px;
+}
+/* #recent_infos{
+	margin: 0 60px;
+} */
+#recent_infos .recent-info{
+	justify-content: space-between;
+	display: flex;
+}
+#recent_infos .recent-info:nth-child(2n){
+	flex-direction: row-reverse;
+}
+#recent_infos .recent-info .recent-info-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+#recent_infos .recent-info>div{	height: 300px;
+	border-radius: 15px;
+	margin-bottom: 50px;
+}
+#recent_infos .recent-info>div:first-child{
+	width: calc(47% - 30px);
+}
+#recent_infos .recent-info>div:last-child{
+	width: calc(48.5% + 30px);
+	background: #151515;
+	color: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#recent_infos .recent-info>div h2{
+	color: #640e0e;
+}
+#recent_infos .recent-info>div p{
+	line-height: 23px;
+	font-size: 17px;
+}
+#services{
+	margin-top: 20px;
+}
+h2.section-heading{
+	color: #fff;
+	border-radius: 5px;
+	background: #640e0e;
+	padding: 5px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 35px;
+	margin: 90px 0;
+}
+#services >h2{
+	margin-top: 20px;
+}
+#services_list{
+	display: flex;
+	justify-content: space-between;
+}
+.info-card{
+	aspect-ratio: 1;
+	border-radius: 30px;
+	border: 3px solid #640e0e;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;	
+}
+.info-card img{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+.info-card div{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;	
+}
+.info-card h2{
+	margin-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;	
+}
+.info-card p{
+	color: #fff;
+	text-align: center;
+}
+#services_list .service-card{
+	width: 26%;
+}
+#services_list .service-card .service_detail{
+	background: #000000aa;
+}
+#services_list .service-card h2 {
+	color: #640e0e;
+}
+#services_list .service-card p {
+	font-size: 18px;
+	line-height: 23px;
+}
+#strengths_list{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+#strengths_list .strength-card{
+	width: 27%;
+	margin-top: 40px;
+}
+#strengths_list  .strength-card .service_detail{
+	background: #00000078;
+	color: #fff;
+}
+#work_list{
+	width: 90%;
+	margin: 0 auto;
+}
+#work_list .work {
+	width: 45%;
+	color: #fff;
+}
+#work_list .work h2{
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#work_list .work p{
+	margin: 30px 0;
+	font-size: 17px;
+	line-height: 23px;
+	text-align: center;
+}
+#employees_list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+#employees_list .employee{
+	width: 28%;
+	background: #151515;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+#employees_list .employee .name{
+	line-height: 23px;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin: 20px 0;
+}
+#employees_list .employee .profile{
+	width: 80%;
+	margin: 0 auto;
+	aspect-ratio: 1;
+}
+#employees_list .employee .profile img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#employees_list .employee .designation{
+	color: #640e0e;
+	text-align: center;
+	margin: 20px 0;
+	font-weight: bold;
+	font-size: 20px;
+	height: 46px;
+	line-height: 23px;
+}
+#employees_list .employee .desc{
+	margin: 20px 0;
+	text-align: center;
+	line-height: 23px;
+}
+#other_services{
+	height: 300px;
+	max-width: 1280px;
+	background: url('../images/other_services.webp');
+	background-size: cover;
+	margin: 0 auto;
+}
+#other_services h1{
+	font-size: 60px;
+	color: #fff;
+	line-height: 300px;
+	text-align: center;
+}
+.end-section{
+	margin-bottom: 90px;
+}
+.end-section .thumbnail{
+	width: 80%;
+	margin: 50px auto;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-bottom: 60px;
+}
+.end-section .quote{
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	width: 85%;
+	margin: 0 auto;
+}
+.end-section p{
+	font-size: 20px;
+	color: #fff;
+	width: 85%;
+	text-align: center;
+	margin: 20px auto;
+}
+.end-section a{
+	color: #fff;
+	font-size: 18px;
+	display: block;
+	margin:0 auto;
+	width: 180px;
+	text-align: center;
+}
+#internship{
+	margin-bottom: 60px;
+}
+#internship ol{
+	color: #fff;
+	font-size: 20px;
+	line-height: 30px;
+	list-style: none;
+	counter-reset: list;
+	text-align: center;
+}
+#internship ol h2{
+	font-size: 20px;
+	margin: 20px;
+}
+#internship ol li::before{
+	content: counter(list) ". ";
+	counter-increment: list;
+}
+#contactus .form-desc{
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+#contactus form{
+	width: 60%;
+	margin: 0 auto;
+	background: #151515;
+	padding: 20px;
+	border-radius: 15px;
+}
+#contactus [placeholder] {
+	width: calc(100% - 10px);
+	min-height: 40px;
+	font-size: 18px;
+	margin: 5px;
+	padding: 0 10px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	background: #252525;
+	border: 0;
+	outline: none;
+	color: #fff;
+}
+#contactus textarea{
+	height: 100px;
+}
+#contactus [placeholder]::placeholder{
+	color: #fff;
+}
+.btn-grp label,
+.btn-grp button{
+	height: 30px;
+	background: #640e0e;
+	color: #fff;
+	border: 0;
+	border-radius: 8px;
+	padding: 10px;
+	display: inline-block;
+}
+.btn-grp div{
+	display: inline-block;
+}
+.btn-grp button{
+	float: right;
+	height: 50px;
+	width: 100px;
+}
+#contactus p{
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+}
+#whatsapp{
+	max-width: 90%;
+	width: 565px;
+	height: 85px;
+	padding: 12.5px;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 15px;
+	background: #00ff004a;
+	margin: 30px auto;
+	border: 0;
+}
+#whatsapp img{ 
+	height: 60px;
+	width: 60px;
+	object-fit: contain;
+}
+#whatsapp div{
+	line-height: 60px;
+	font-size: 30px;
+	color: #fff;
+}
+#meeting_info{
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	width: 100%;
+}
+#meeting_info>*{
+	width: 35%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+}
+#meeting_info ul{
+	list-style: none;
+}
+#meeting_info h2{
+	font-size: 23px;
+}
+#meeting_info a{
+	color: inherit;
+	text-decoration: none;
+}
+#partners_list{
+	align-items: center;
+}
+#partners_list .square{
+	aspect-ratio: 1;
+	border-radius: 15px;
+	border: 3px solid #640e0e;
+	width: 20%;
+	overflow: hidden;
+}
+#partners_list .rectangle{
+	width: 40%;
+}
+#partners_list img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+#social{
+	margin-bottom: 100px;
+}
+#social ul{
+	list-style: none;
+	justify-content: center;
+}
+#social li{
+	margin: 30px;
+}
+#social a{
+	display: block;
+}
+
+#social img{
+	height: 60px;
+	aspect-ratio: 1;
+}
+#contact{
+	text-align: center;
+	color: #fff;
+	width: 60%;
+	margin: auto;
+	height: 400px;
+}
+#contact h2{
+	font-size: 20px;
+	line-height: 30px;
+	margin: 25px ;
+}
+#contact a{
+	color: inherit;
+	text-decoration: none;
+}
+#support{
+	padding: 20px;
+}
+#support a{
+	color: #fff;
+	font-size: 12px;
+	padding: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	border-radius: 18px;
+}
+#support a:hover{
+	background: #151515;
+}
+@media screen and (max-width: 1024px) {
+	#services_list .service-card h2{
+		padding: 0;
+		font-size: 20px;
+		line-height: 23px;
+		margin: 10px;
+	}
+	#services_list .service-card p{
+		font-size: 15px;
+		line-height: 20px;
+	}
+}
+@media screen and (max-width: 768px) {
+	#intro{
+		aspect-ratio: 1.25;
+	}
+	#site_logo{
+		margin: 20px auto;
+		width: 40px;
+	}
+	#header_site_info h3{
+		font-size: 20px;
+	}
+	#header_site_info h1{
+		font-size: 55px;
+	}
+	#header_site_info BUTTON{
+		padding: 11px 14px;
+	}
+	#rocket{
+		width: 90px;
+	}
+	#recent > h2{
+		font-size: 20px;
+	}
+	#recent_infos .recent-info{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#recent_infos .recent-info>div:first-child{
+		width: 80%;
+		height: auto;
+	}
+	#recent_infos .recent-info>div:last-child{
+		width: 90%;
+		height: auto;
+	}
+	h2.section-heading{
+		font-size: 20px;
+	}
+	#services_list{
+		flex-wrap: wrap;
+		width: 80%;
+		margin: 0 auto;
+	}
+	#services_list .service-card,
+	#strengths_list .strength-card{
+		width: calc(50% - 50px);
+		margin: 20px;
+	}
+	.row{
+		flex-wrap:wrap;
+	}
+	#work_list .work{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#work_list .work+.work{
+		margin-top: 30px;
+	}
+	#work_list .work h2{
+		margin-bottom: 30px
+	}
+	#work_list .work .work-thumbnail{
+		width: 45%;
+
+	}
+	#work_list .work p{
+		width: 50%;
+	}
+	#employees_list .employee{
+		width: 45%;
+	}
+	#other_services{
+		height: 250px;
+	}
+	#other_services h1{
+		font-size: 50px;
+		line-height: 250px;
+	}
+	#whatsapp{
+		height: 50px;
+		padding: 5px;
+		border-radius: 10px;
+		width: 360px;
+	}
+	#whatsapp img{
+		width: 40px;
+		height: 40px;
+	}
+	#whatsapp div{
+		font-size: 22px;
+		line-height: 40px;
+	}
+	#meeting_info h2{
+		font-size: 15px;
+	}
+	#meeting_info>*{
+		font-size: 14px;
+	}
+	#social li {
+		margin: 15px;
+	}
+	#social img{
+		height: 40px;
+	}
+	#contact h2{
+		font-size: 15px;
+	}
+	#support a{
+		font-size: 10px;
+	}
+}
+@media screen and (max-width : 425px) {
+	#site_logo{
+		width: 35px;
+	}
+	#header_site_info h3{
+		font-size: 14px;
+	}
+	#header_site_info h1{
+		font-size: 35px;
+	}
+	#header_site_info BUTTON {
+		padding: 8px 9px;
+		font-size: 12px;
+		margin: 12px 10px;
+	}
+	#header_social_site{
+		text-align: center;
+	}
+	#header_social_site li{
+		width: 20px;
+	}
+	#rocket{
+		width: 50px;
+	}
+	#recent > h2{
+		font-size: 16px;
+	}
+	#recent_infos .recent-info>div h2{
+		font-size: 18px;
+	}
+	#recent_infos .recent-info>div p{
+		font-size: 15px;
+	}
+	h2.section-heading{
+		margin: 20px auto 50px;
+		font-size: 18px;
+	}
+	#services_list .service-card,
+	#strengths_list .strength-card{
+		width: 100%;
+	}
+	#work_list .work {
+		justify-content: center;
+	}
+	#work_list .work .work-thumbnail{
+		width: 80%;
+	}
+	#work_list .work p{
+		width: 100%;
+		margin: 20px auto;
+	}
+	#employees_list .employee{
+		width: 90%;
+	}
+	#other_services h1{
+		font-size: 30px;
+	}
+	.end-section .quote{
+		font-size: 18px;
+	}
+	.end-section p{
+		font-size: 14px;
+	}
+	.end-section a{
+		font-size: 15px;
+	}
+	#internship ol{
+		font-size: 16px;
+		line-height: 27px;
+	}
+	#internship ol h2{
+		font-size: 17px;
+		margin: 15px;
+	}
+	#contactus .form-desc{
+		font-size: 17px;
+	}
+	#contactus form{
+		width: 85%;
+	}
+	#contactus [placeholder]{
+		font-size: 15px;
+	}
+	.btn-grp div{
+		display: block;
+		margin: 5px 0;
+		float: none;
+	}
+	.btn-grp label,
+	.btn-grp button{
+		width: 100%;
+		float: none;
+		box-sizing: border-box;
+		height: 40px;
+		text-align: center;
+		font-size: 14px;
+		margin: 5px 0;
+	}
+	#contactus .form-desc{
+		font-size: 16px;
+	}
+	#contactus p{
+		font-size: 14px;
+	}
+	#whatsapp div{
+		font-size: 17px;
+	}
+	#meeting_info{
+		flex-wrap: wrap;
+	}
+	#meeting_info>*{
+		width: 90%;
+	}
+	#partners_list {
+		justify-content: center;
+	}
+	#partners_list .square{
+		width: 50%;
+		margin: 30px auto;
+	}
+	#partners_list .rectangle{
+		width: 50%;
+	}
+	#social li {
+		margin: 10px;
+	}
+	#social{
+		margin-bottom: 50px;
+	}
+	#social img{
+		height: 30px;
+	}
+}
+@media screen and (max-width : 375px) {
+	#intro{
+		height: 270px;
+		aspect-ratio: auto;
+	}
+	#social{
+		margin-bottom: 0;
+	}
+	#social img{
+		height: 20px;
+	}
+	#contact h2{
+		margin: 0;
+		font-size: 13px;
+	}
+}
